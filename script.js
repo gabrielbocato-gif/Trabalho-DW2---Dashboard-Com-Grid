@@ -1,0 +1,135 @@
+const ctx = document.getElementById('barchart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Gabriel', 'Davi', 'Enzo', 'Camila', 'Ester', 'Isadora'],
+      datasets: [{
+        label: 'Os mais fodas',
+        data: [20, 17, 14, 11, 8, 5],
+        borderWidth: 2
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+
+// separação //
+
+  const ctx2 = document.getElementById('pie');
+
+  new Chart(ctx2, {
+    type: 'pie',
+    data: {
+      labels: ['Gabriel', 'Davi', 'Enzo', 'Camila', 'Ester', 'Isadora'],
+      datasets: [{
+        label: 'Pizza Comidas',
+        data: [20, 17, 15, 12, 9, 6],
+        borderWidth: 2
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+
+  // separação //
+
+  const ctx3 = document.getElementById('radar');
+
+  new Chart(ctx3, {
+    type: 'radar',
+    data: {
+      labels: ['Aura', 'Força', 'Defesa', 'Profetizador', 'Velocidade', 'HAX'],
+      datasets: [{
+        label: 'Radar do Davi',
+        data: [20, 20, 20, 18, 19, 20],
+        borderWidth: 2
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+
+  // separação //
+
+  const ctx4 = document.getElementById('bubble');
+
+  new Chart(ctx4, {
+    type: 'bubble',
+    data: {
+      labels: ['Camila', 'Camila', 'Camila', 'Camila', 'Camila', 'Camila'],
+      datasets: [{
+        label: 'Trabalhos que a camila não usou chat',
+        data: [20, 17, 15, 12, 9, 6],
+        borderWidth: 2
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+
+// sepração //
+
+const ctx5 = document.getElementById('line');
+
+new Chart(ctx5, {
+  type: 'line',
+  data: {
+    labels: ['Gabriel', 'Davi', 'Enzo', 'Camila', 'Ester', 'Isadora'],
+    datasets: [{
+      label: 'Número de votos',
+      data: [20, 10, 15, 18, 9, 16, 10],
+      borderWidth: 2
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+
+// separação //
+
+const ctx6 = document.getElementById('scatter');
+
+new Chart(ctx6, {
+  type: 'scatter',
+  data: {
+    labels: ['Gabriel', 'Davi', 'Enzo', 'Camila', 'Ester', 'Isadora'],
+    datasets: [{
+      label: 'Número de votos',
+      data: [20, 10, 15, 18, 9, 16, 10],
+      borderWidth: 2
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});

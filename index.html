@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Dashboard do Gabriel</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -15,12 +16,25 @@
         <div class="sales"></div>
         <div class="people"></div>
         <div class="content">
-            <div class="circle"></div>
-            <div class="pilar"></div>
-            <div class="waves"></div>
-            <div class="graphic"></div>
+            <div class="circle">
+                <canvas id="scatter"></canvas>
+            </div>
+            <div class="radar">
+                <canvas id="radar"></canvas>
+                <canvas id="bubble"></canvas>
+            </div>
+            <div class="pilar">
+                <canvas id="line"></canvas>
+            </div>
+            <div class="graphic">
+                <canvas id="barchart"></canvas>
+                <canvas id="pie"></canvas>
+            </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
