@@ -68,24 +68,27 @@ const ctx = document.getElementById('barchart');
   // separação //
 
   const ctx4 = document.getElementById('bubble');
-
+const data1 = {
+  datasets: [{
+    label: 'Bolinhas que representam algo 1',
+    data: [{
+      x: 20,
+      y: 12,
+      r: 15
+    }, {
+      x: 20,
+      y: 5,
+      r: 10
+    }],
+    backgroundColor: 'rgb(255, 99, 132)'
+  }]
+};
   new Chart(ctx4, {
     type: 'bubble',
-    data: {
-      labels: ['Camila', 'Camila', 'Camila', 'Camila', 'Camila', 'Camila'],
-      datasets: [{
-        label: 'Trabalhos que a camila não usou chat',
-        data: [20, 17, 15, 12, 9, 6],
-        borderWidth: 2
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
+  data: data1,
+  options: {
+
+  }
   });
 
 // sepração //
@@ -114,21 +117,33 @@ new Chart(ctx5, {
 // separação //
 
 const ctx6 = document.getElementById('scatter');
-
+const data = {
+  datasets: [{
+    label: 'Bolinhas que representam algo 1',
+    data: [{
+      x: -10,
+      y: 0
+    }, {
+      x: 0,
+      y: 10
+    }, {
+      x: 10,
+      y: 5
+    }, {
+      x: 0.5,
+      y: 5.5
+    }],
+    backgroundColor: 'rgb(255, 99, 132)'
+  }],
+};
 new Chart(ctx6, {
   type: 'scatter',
-  data: {
-    labels: ['Gabriel', 'Davi', 'Enzo', 'Camila', 'Ester', 'Isadora'],
-    datasets: [{
-      label: 'Número de votos',
-      data: [20, 10, 15, 18, 9, 16, 10],
-      borderWidth: 2
-    }]
-  },
+  data: data,
   options: {
     scales: {
-      y: {
-        beginAtZero: true
+      x: {
+        type: 'linear',
+        position: 'bottom'
       }
     }
   }
