@@ -108,7 +108,7 @@ new Chart(ctx5, {
   options: {
     scales: {
       y: {
-        beginAtZero: true
+        beginAtZero: false
       }
     }
   }

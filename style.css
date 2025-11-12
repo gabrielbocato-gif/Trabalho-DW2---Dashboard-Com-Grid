@@ -41,19 +41,29 @@ body {
     border-radius: 1vh;
 }
 
-.views {
+.saldo {
     background: linear-gradient(-90deg,
             rgb(151, 223, 133),
             rgb(73, 134, 49));
     border-radius: 1vh;
     font-size: 300%;
+    display: grid; 
+    grid-template: repeat(2, 1fr)/ 30% 70%;
+    grid-template-areas: 
+    "imgbank saldoo"
+    "imgbank bancaria";
 }
 
-.sales {
+.risco {
+    display: grid;
     background: linear-gradient(90deg,
             rgb(255, 187, 0),
             rgb(255, 239, 97));
     border-radius: 1vh;
+    grid-template: 30% 70% / 30% 70%;
+    grid-template-areas: 
+    "juju riscojuju"
+    "jujuimg riscojuju";
 }
 
 .people {
@@ -186,3 +196,61 @@ body {
 .visalogo {
     height: 200%;
 }
+
+.imgbankk {
+    height: 90%;
+}
+
+.imgbank {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: imgbank;
+}
+.bancaria {
+    padding-left: 5%;
+    padding-top: 3%;
+    grid-area: bancaria;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70%;
+}
+
+.saldoo {
+    padding-top: 5%;
+    padding-left: 5%;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100%;
+}
+
+.jujuimgg {
+    height: 120%;
+    width: 100%;
+    border-radius: 50vh;
+}
+.riscoo {
+    height: 100%;
+    width: 100%;
+}
+.juju {
+    padding-left: 15%;
+    grid-area: juju;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jujuimg {
+    grid-area: jujuimg;
+    padding-left: 15%;
+    margin: 10px;
+}
+.riscojuju {
+    margin: 10px;
+    grid-area: riscojuju;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
